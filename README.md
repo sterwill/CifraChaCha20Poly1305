@@ -16,7 +16,7 @@ Find CifraChaCha20Poly1305 at [https://github.com/sterwill/CifraChaCha20Poly1305
 
 ## Upstream Version 
 
-The files in this library are derived from [this commit of Cifra](https://github.com/ctz/cifra/commit/319fdb764cd12e12b8296358cfcd640346c4d0dd).
+The files in this library are derived from [this commit of Cifra](https://github.com/ctz/cifra/tree/319fdb764cd12e12b8296358cfcd640346c4d0dd).
 
 ## License
 
