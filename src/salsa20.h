@@ -18,6 +18,10 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * The Salsa20/Chacha20 stream ciphers
  * ===================================
@@ -136,5 +140,9 @@ void cf_salsa20_cipher(cf_salsa20_ctx *ctx, const uint8_t *input, uint8_t *outpu
  * :param output: output data buffer (written), `count` bytes long.
  */
 void cf_chacha20_cipher(cf_chacha20_ctx *ctx, const uint8_t *input, uint8_t *output, size_t count);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif

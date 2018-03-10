@@ -18,6 +18,10 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /* Processing function for cf_blockwise_accumulate. */
 typedef void (*cf_blockwise_in_fn)(void *ctx, const uint8_t *data);
 
@@ -143,5 +147,9 @@ void cf_blockwise_acc_pad(uint8_t *partial, size_t *npartial,
                           size_t nbytes,
                           cf_blockwise_in_fn process,
                           void *ctx);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif

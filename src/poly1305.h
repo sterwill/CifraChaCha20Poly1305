@@ -18,6 +18,10 @@
 #include <stddef.h>
 #include <stdint.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * Poly1305
  * ========
@@ -87,5 +91,9 @@ void cf_poly1305_update(cf_poly1305 *ctx,
  */
 void cf_poly1305_finish(cf_poly1305 *ctx,
                         uint8_t out[static 16]);
+
+#ifdef __cplusplus
+} // extern "C"
+#endif
 
 #endif

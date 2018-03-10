@@ -9,6 +9,7 @@ were required to build Cifra's source code with the Arduino toolchain.
 1. handy.h was moved from src/ext so the C file includes didn't have to change 
    (there's no easy way to add an include path for src/ext when Arduino builds libraries)
 2. The "static" keyword was removed from array size initializers
+3. Wrap header files with non-static functions with 'extern "C" {}'
 
 ## Project
 
